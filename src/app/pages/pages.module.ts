@@ -8,16 +8,19 @@ import { PagesComponent } from './pages.component';
 import { SharedModule } from '../shared/shared.module';
 import { PagesRoutingModule } from './pages-routing.module';
 
+import { ChartsModule } from 'ng2-charts';
+
 // temporal 
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
-
+import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
 @NgModule({
     declarations: [
         PagesComponent,
         DashboardComponent,
         ProgressComponent,
         Graficas1Component,
-        IncrementadorComponent
+        IncrementadorComponent,
+        GraficoDonaComponent
     ],
     exports: [
         DashboardComponent,
@@ -27,7 +30,8 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
     imports: [
         SharedModule,
         PagesRoutingModule,
-        FormsModule
+        FormsModule,
+        ChartsModule
     ]
 })
 
