@@ -10,9 +10,10 @@ import { PagesModule } from './pages/pages.module';
 
 import { RegisterComponent } from './login/register.component';
 import { FormsModule } from '@angular/forms';
+import { ServiceModule } from './services/service.module';
 
 // servicios
-import { SettingsService } from './services/settings.service';
+
 
 
 @NgModule({
@@ -25,9 +26,10 @@ import { SettingsService } from './services/settings.service';
     BrowserModule,
     PagesModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
-  providers: [SettingsService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
