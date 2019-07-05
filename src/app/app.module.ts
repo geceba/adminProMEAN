@@ -9,7 +9,7 @@ import { PagesModule } from './pages/pages.module';
 
 
 import { RegisterComponent } from './login/register.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ServiceModule } from './services/service.module';
 
 // servicios
@@ -27,6 +27,7 @@ import { ServiceModule } from './services/service.module';
     PagesModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     ServiceModule
   ],
   providers: [],
