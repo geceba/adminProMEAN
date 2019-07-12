@@ -20,6 +20,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 // Pipe module
 import { PipesModule } from '../pipes/pipes.module';
 import { ProfileComponent } from './profile/profile.component';
+import { CommonModule } from '@angular/common';
 @NgModule({
     declarations: [
         PagesComponent,
@@ -43,7 +44,8 @@ import { ProfileComponent } from './profile/profile.component';
         PagesRoutingModule,
         FormsModule,
         ChartsModule,
-        PipesModule
+        PipesModule,
+        CommonModule
     ]
 })
 
