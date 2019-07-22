@@ -1,3 +1,4 @@
+export { VerifaTokenGuard } from './guards/verifa-token.guard';
 
 export { UploadFileService } from './upload-file/upload-file.service';
 export { UsuarioService } from './usuario/usuario.service';
