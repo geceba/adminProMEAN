@@ -9,9 +9,11 @@ import  { SettingsService,
   LoginGuardGuard, 
   UploadFileService, 
   HospitalService,
-  MedicoService
+  MedicoService,
+  AdminGuard
  } from './service.index';
 import { ModalUploadService } from '../components/modal-upload/modal-upload.service';
+
 
 
 @NgModule({
@@ -29,7 +31,8 @@ import { ModalUploadService } from '../components/modal-upload/modal-upload.serv
     UploadFileService,
     ModalUploadService,
     HospitalService,
-    MedicoService
+    MedicoService,
+    AdminGuard
   ]
 })
 export class ServiceModule { }
