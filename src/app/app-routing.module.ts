@@ -14,7 +14,7 @@ const routes: Routes = [
     path: '',
     component: PagesComponent,
     canActivate: [LoginGuardGuard],
-    loadChildren: () => import('./pages/pages.module').then(m => PagesModule) 
+    loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) 
   },
   { path: '**', component: NopagefoundComponent }
 ];
